@@ -1,4 +1,4 @@
-const scores = [10,20,30,40,50,60]
+const scores = [100,10,80,20,30,88,40,50,60]
 const out = scores.filter((score)=>{
     return score > 30
 })
@@ -66,7 +66,7 @@ console.log(`not sorted ${names}`)
 
 console.log(`sorted array ${names}`)
 
-const sortedPlayers = playerScores.sort((a,b)=>{
+playerScores.sort((a,b)=>{
     if( a.score > b.score ){
         return -1
     }else if(b.score > a.score){
@@ -77,4 +77,8 @@ const sortedPlayers = playerScores.sort((a,b)=>{
 
 })
 
-console.log(`sorted players are ${sortedPlayers}`)
+scores.sort((a,b) => b - a)
+console.log(scores)
+
+console.log(`sorted players are ${playerScores}`)
+console.log(playerScores)
