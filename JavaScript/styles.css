@@ -1,0 +1,82 @@
+.error {
+  padding: 10px;
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.success {
+  padding: 10px;
+  color: limegreen;
+  border: 1px solid limegreen;
+}
+
+.item {
+  width: 180px;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  background-color: grey;
+  margin: 5px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: crimson;
+  color: white;
+  border: 0;
+  padding: 6px 10px;
+}
+
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.popup {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+}
+body {
+  background: #eee;
+}
+form {
+  max-width: 200px;
+  margin: 40px auto;
+  background: white;
+  padding: 10px;
+}
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 4px;
+  border-color: gray;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px auto;
+}
