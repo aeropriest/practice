@@ -35,3 +35,46 @@ const products = [
 const highValue = products.map(product => product.price >= 30 ? {name: product.name, price: product.price/2} : product )
 
 console.log(highValue)
+
+const playerScores = [
+    {player: 'mario', score:10},
+    {player: 'jais', score:4},
+    {player: 'mario', score:40},
+    {player: 'mario', score:45},
+    {player: 'mario', score:22},
+    {player: 'hey', score:88},
+]
+
+const totalScore = playerScores.reduce((accum, curr) => {
+    if( curr.player === 'mario'){
+        accum += curr.score
+    }
+    return accum
+},0)
+
+console.log(`marios score is ${totalScore}`)
+
+const highScore = scores.find((score)=>{
+    return score >= 20
+})
+
+console.log(`highest score is ${highScore}`)
+
+const names = ['ashok', 'hey hey', 'jais', 'ariane', 'mamam']
+
+console.log(`not sorted ${names}`)
+
+console.log(`sorted array ${names}`)
+
+const sortedPlayers = playerScores.sort((a,b)=>{
+    if( a.score > b.score ){
+        return -1
+    }else if(b.score > a.score){
+        return 1
+    }else{
+        return 0
+    }
+
+})
+
+console.log(`sorted players are ${sortedPlayers}`)
