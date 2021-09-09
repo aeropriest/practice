@@ -4,6 +4,12 @@ const out = scores.filter((score)=>{
 })
 console.log(out)
 
+const reduced = scores.reduce((acc,curr)=>{
+    if( curr > 20 )
+        acc ++
+    return acc
+},0)
+console.log('reduced array is ', reduced)
 const users = [
     {name: 'ashok', premium: true},
     {name: 'ariane', premium: false},
@@ -22,14 +28,10 @@ const products = [
     {name: 'gold', price: 20},
     {name: 'silver', price: 40},
     {name: 'diamond', price: 50},
-    {name: 'jade', price: 10},
+    {name: 'jade', price: 80},
     {name: 'platinum', price: 60},
 ]
 
-const highValue = products.map((product) =>{
-    if( product.price >= 30 )
-        return {name: product.name, price: product.price/2}
-    return product
-})
+const highValue = products.map(product => product.price >= 30 ? {name: product.name, price: product.price/2} : product )
 
 console.log(highValue)
