@@ -30,7 +30,19 @@ const products = [
     {name: 'diamond', price: 50},
     {name: 'jade', price: 80},
     {name: 'platinum', price: 60},
+    {name: 'brass', price: 10},
+    {name: 'plastic', price: 5},
 ]
+
+
+
+//find all products more than 20 dollar and then map it to the new array
+console.log('expeinse proucts are ')
+
+console.log(products
+    .filter( product=> product.price > 20 )
+    .map( product => `the ${product.name} is ${product.price} dollars`))
+
 
 const highValue = products.map(product => product.price >= 30 ? {name: product.name, price: product.price/2} : product )
 
